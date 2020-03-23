@@ -1,8 +1,8 @@
 [letsencrypt]
 #tfflask.danjake.opensource-ukraine.org
-tfjenkins.danjake.opensource-ukraine.org
+tfjenkins.sxvova.opensource-ukraine.org
 #tfsentry.danjake.opensource-ukraine.org
 [jenkins]
-tfjenkins.danjake.opensource-ukraine.org
+tfjenkins.sxvova.opensource-ukraine.org
 [gitlab]
 #tfgitlab.danjake.opensource-ukraine.org

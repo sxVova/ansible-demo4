@@ -37,33 +37,33 @@
   apt:
     name: jenkins=2.204.2
 
-- name: Add ansible repository
-  apt_repository: 
-    repo: ppa:ansible/ansible
+#- name: Add ansible repository
+#  apt_repository: 
+#    repo: ppa:ansible/ansible
 
-- name: Update system
-  apt: update_cache=yes
+#- name: Update system
+#  apt: update_cache=yes
 
-- name: Install ansible
-  apt:
-    name: ansible
+#- name: Install ansible
+#  apt:
+#    name: ansible
 
-- name: Install packages for tests
-  apt:
-    pkg:
-    - libxmlsec1-dev
-    - pkg-config
-    - memcached
-    - redis-server
-    - postgresql
-    - unzip
+#- name: Install packages for tests
+#  apt:
+#    pkg:
+#    - libxmlsec1-dev
+#    - pkg-config
+#    - memcached
+#    - redis-server
+#    - postgresql
+#    - unzip
 
--  name: Create virtualenv and activate
-   shell: virtualenv --no-setuptools foo
-          creates="foo/bin/activate"
+#-  name: Create virtualenv and activate
+#   shell: virtualenv --no-setuptools foo
+#          creates="foo/bin/activate"
 
-- name: Install setuptools
-  shell: pip install setuptools
+#- name: Install setuptools
+#  shell: pip install setuptools
 
 - name: Install jenkins cli
   get_url: 
@@ -117,16 +117,16 @@
     #owner: jenkins
     #group: jenkins
 
-- name: Copy templete to start sentry pipeline
-  template:
-    src: 01-run.groovy.j2
-    dest: /var/lib/jenkins/init.groovy.d/01-run.groovy
-    owner: jenkins
-    group: jenkins
+#- name: Copy templete to start sentry pipeline
+#  template:
+#    src: 01-run.groovy.j2
+#    dest: /var/lib/jenkins/init.groovy.d/01-run.groovy
+#    owner: jenkins
+#    group: jenkins
 
-- name: Copy templete to start flask pipeline
+- name: Copy templete to start demo4 pipeline
   template:
-    src: 02-run.groovy.j2
+    src: 03-run.groovy.j2
     dest: /var/lib/jenkins/init.groovy.d/02-run.groovy
     owner: jenkins
     group: jenkins

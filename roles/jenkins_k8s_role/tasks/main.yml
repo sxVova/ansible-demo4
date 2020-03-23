@@ -39,22 +39,16 @@
   copy:
     src: key.json
     dest: /key.json
-    owner: jenkins
-    group: jenkins
 
 - name: Copy linter for Java code
   copy:
     src: checkstyle-8.30-all.jar
     dest: /checkstyle-8.30-all.jar
-    owner: jenkins
-    group: jenkins
 
 - name: Unzip go.tar
   unarchive: 
     src: https://dl.google.com/go/go1.11.linux-amd64.tar.gz
     dest: /usr/local
-    owner: jenkins
-    group: jenkins
     remote_src: yes
 
 - name: Install flake8

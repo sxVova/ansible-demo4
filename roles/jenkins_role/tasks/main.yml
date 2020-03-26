@@ -120,7 +120,7 @@
 - name: Copy templete to start demo4 pipeline
   template:
     src: 03-run.groovy.j2
-    dest: /var/lib/jenkins/init.groovy.d/03-run.groovy
+    dest: /var/lib/jenkins/init.groovy.d/run.groovy
     owner: jenkins
     group: jenkins
 

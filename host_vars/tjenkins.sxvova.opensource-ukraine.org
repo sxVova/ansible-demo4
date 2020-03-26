@@ -1,6 +1,6 @@
 ---
 
-domain_name:                tfjenkins.sxvova.opensource-ukraine.org 
+domain_name:                tjenkins.sxvova.opensource-ukraine.org 
 container_port:             8080
 ansible_python_interpreter: /usr/bin/python
 

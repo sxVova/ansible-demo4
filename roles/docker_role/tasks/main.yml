@@ -7,14 +7,9 @@
   apt:
     name: docker.io
 
-- name: Start docker
+- name: Start & enable docker
   systemd:
     state:   started
-    name:    docker
-    enabled: yes
-
-- name: Enable docker
-  systemd:
     name:    docker
     enabled: yes
 
